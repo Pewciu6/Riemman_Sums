@@ -6,6 +6,7 @@ from Right_Sum import Right_Riemman_Sum
 from Middle_Sum import Middle_Sum_Riemann
 
 
+
 while(True):
     
     Initialize = input("Would you like to calculate middle, left or perhaps right Riemman Sums?: ")
@@ -24,21 +25,21 @@ while(True):
 
         if Initialize.lower() == "middle":
             
-            for i in range(1, Partition, 3):
+            for i in range(1, Partition+1, 3):
                 plt.clf()
                 Middle_Sum_Riemann(i, Start, End, Arguments, Values)
                 plt.pause(2)
 
         elif Initialize.lower() == "right":
 
-            for i in range(1, Partition, 3):
+            for i in range(1, Partition+1, 3):
                 plt.clf()
                 Right_Riemman_Sum(i, Start, End, Arguments, Values)
                 plt.pause(2)
 
         else:
 
-            for i in range(1, Partition, 3):
+            for i in range(1, Partition+1, 3):
                 plt.clf()
                 Left_Riemman_Sum(i, Start, End, Arguments, Values)
                 plt.pause(2)
